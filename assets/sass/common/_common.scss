@@ -9,12 +9,11 @@
 }
 
 .cm-container{
-    max-width: 37.5rem;
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
 
-    @include mq-below($mobile){
-        max-width: initial;
+    @include mq-above($sm){
+        max-width: 37.5rem;
     }
 }

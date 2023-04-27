@@ -407,14 +407,13 @@ body {
 }
 
 .cm-container {
-  max-width: 37.5rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .cm-container {
-    max-width: initial;
+    max-width: 37.5rem;
   }
 }
 
