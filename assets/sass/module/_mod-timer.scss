@@ -1,0 +1,11 @@
+//mod-timer
+.mod-timer{
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    background-color: $clr-secondary;
+
+    .timer-text{
+        @include font-source(1.2rem, 1.306rem, $font-regular, $clr-root, capitalize)
+    }
+
+}

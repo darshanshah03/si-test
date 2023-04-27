@@ -1,0 +1,60 @@
+/*
+  @Project : SI Test
+  @Dev : Darshan
+  @Date : 26/04/2023;
+*/
+
+
+/* config */
+
+// @import "fonts/font";
+
+/* config */
+
+@import "config/variables";
+@import "config/mixin";
+
+/* element */
+
+@import "elements/reset";
+@import "elements/normalize";
+@import "elements/elements";
+
+/* common */
+
+@import "common/base-setup";
+@import "common/common";
+
+
+/* base */
+
+@import "base/bs-btn";
+@import "base/bs-header";
+@import "base/bs-meta-info-wrap";
+@import "base/bs-card";
+@import "base/bs-tab";
+@import "base/bs-pitch-view";
+@import "base/bs-switch";
+
+
+
+/* layout */
+
+@import "layout/lyt-coutry-list";
+@import "layout/lyt-meta-info";
+@import "layout/lyt-player-list";
+
+
+/* module */
+
+@import "module/mod-timer";
+@import "module/mod-team-info";
+@import "module/mod-progress";
+@import "module/mod-player";
+@import "module/mod-player-info";
+@import "module/mod-icon-text";
+
+
+
+/* plugins */
+

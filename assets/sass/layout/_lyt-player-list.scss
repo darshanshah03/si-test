@@ -1,0 +1,17 @@
+//lyt-player-list
+.lyt-player-list{
+
+    .pl-item{
+        border-bottom: 1px solid $clr-border;
+        &:last-child{
+            border: none;
+        }
+
+        &:hover{
+            .mod-player{
+                @include background-opacity($clr-border, 0.2);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+//mod-player-info
+.mod-player-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 3rem;
+
+    .img-wrap{
+        width: 3.1rem;
+        height: 3.6rem;
+        display: block;
+        background: url('../../assets/images/team1-player.png') no-repeat 0 0 transparent;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+    }
+
+    .pi-title{
+        @include font-source(0.8rem, 0.9rem, $font-medium, $clr-body, capitalize);
+        padding: 0.4rem;
+        border-radius: 0.3rem;
+        background-color: $clr-root;
+        margin-bottom: 0.4rem;
+        width: 6rem;
+    }
+
+    .pi-value{
+        @include font-source(0.8rem, 0.9rem, $font-medium, $clr-base-3, capitalize);
+    }
+
+    .info-wrap{
+        position: relative;
+    }
+
+    .pi-badge{
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 100%;
+        background-color: $clr-primary;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 33%;
+        transform: translateY(-50%);
+        right: 0;
+
+        &:before{
+            @include font-source(0.6rem, 0.7rem, $font-medium, $clr-base-3, capitalize);
+        }
+    }
+
+    &.typ-inverse{
+        .img-wrap{
+            background-image: url('../../assets/images/team2-player.png');
+        }
+        .pi-title{
+            background-color: $clr-dark;
+            color: $clr-root;
+        }
+    }
+
+    &.typ-vc{
+        .pi-badge{
+            display: flex;
+            &:before{
+                content:'VC';
+            }
+        }
+    }
+    &.typ-c{
+        .pi-badge{
+            display: flex;
+            &:before{
+                content:'C';
+            }
+        }
+    }
+
+    
+
+}

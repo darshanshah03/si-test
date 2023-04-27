@@ -1,0 +1,17 @@
+//mod-icon-text
+.mod-icon-text{
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+
+    .icon{
+        font-size: 1.6rem;
+        color: $clr-root;
+        margin-right: 0.4rem
+    }
+
+    .text{
+        @include font-source(1.2rem, 1.3rem, $font-regular, $clr-root, capitalize);
+    }
+
+}

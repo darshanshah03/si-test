@@ -1,0 +1,14 @@
+//lyt-meta-info
+.lyt-meta-info{
+    margin: 2rem 0;
+    display: flex;
+    padding: 0 1rem;
+
+    .mi-item{
+        max-width: 8.2rem;
+        margin-right: 1rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

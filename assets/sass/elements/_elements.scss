@@ -1,0 +1,141 @@
+/* element.scss */
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-media-controls {
+    display: none !important;
+}
+
+*::-webkit-media-controls-panel {
+    display: none !important;
+    -webkit-appearance: none;
+
+}
+
+*::--webkit-media-controls-play-button {
+    display: none !important;
+    -webkit-appearance: none;
+
+}
+
+*::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+
+    // @include mq-between($md, $md-xl) {
+    //     font-size: 8.5px;
+    // }
+
+    // @include mq-between($md-xl, $lg) {
+    //     font-size: 8.7px;
+    // }
+
+    // @include mq-between($xl, $xxl) {
+    //     font-size: 11px;
+    // }
+
+    // @include mq-above($xxl) {
+    //     font-size: 11.5px;
+    // }
+
+    // @include mq-between($xxs, $sm) {
+    //     font-size: 8.5px;
+    // }
+
+    // @include mq-between($sm, $md) {
+    //     font-size: 9.5px;
+    // }
+
+    // @include mq-above($xxxl) {
+    //     font-size: 16px;
+    // }
+
+    // @include mq-below($mobiles) {
+    //     font-size: 8.7px;
+    // }
+
+    // @include mq-between(1290px, 1370px) {
+    //     font-size: 8.5px;
+    // }
+}
+
+body {
+    line-height: initial;
+    font-family: $font;
+    font-display: "swap";
+    background-color: #ffffff;
+    height: 100%;
+
+    // @include mq-above($md) {
+    //     overflow: hidden;
+    // }
+
+
+}
+
+h1,
+h2,
+h3,
+h4.h5 {
+    margin: 0;
+}
+
+p {}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+button {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    @include mq-below($mobile) {
+        display: none;
+    }
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-glyph {
+    will-change: opacity;
+}
+
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}

@@ -1,0 +1,40 @@
+//bs-card
+.bs-card{
+    background-color: $clr-root;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    width: 100%;
+    height: 80vw;
+    max-height: 35.2rem;
+
+    .card-head{
+        background-color: $clr-grey;
+        border-radius: 2rem;
+        padding: 0.6rem 1.5rem;
+
+        .ch-title{
+            @include font-source(0.8rem, 0.9rem, $font-medium, $clr-base, capitalize);
+        }
+
+        .ch-title-wrap{
+            display: flex;
+            align-items: center;
+            .ch-title-item{
+                &:first-child{
+                    width: 60%;
+                }
+                &:nth-child(2){
+                    width: 18%;
+                }
+                &:last-child{
+                    width: 22%;
+                }
+            }
+        }
+    }
+
+    .card-body{
+        max-height: 32.4rem;
+        overflow-y: auto;
+    }
+}

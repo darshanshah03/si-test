@@ -1,0 +1,63 @@
+//bs-btn
+.bs-btn{
+    transition: all 0.3s ease;
+
+    &.btn-icon{
+        padding: 1rem;
+        .icon{
+            color: $clr-root;
+            font-size: 2rem;
+        }
+    }
+
+    &.btn-default{
+        @include font-source(1.6rem, 1.741rem, $font-medium, $clr-root, capitalize);
+        padding: 1.2rem 4.6rem;
+        background-color: $clr-primary;
+        border-radius: 0.4rem;
+
+        &:hover{
+            background-color: #cd6f24;
+        }
+    }
+
+    &.btn-round{
+        border-radius: 100%;
+        background-color: $clr-primary;
+        width: 4rem;
+        height: 4rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        .icon{
+            font-size: 2rem;
+            color: $clr-root;
+        }
+
+        &:hover{
+            background-color: #cd6f24;
+        }
+    }
+
+    &.btn-notification{
+        position: relative;
+
+        .noti{
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include font-source(0.8rem, 0.9rem, $font-medium, $clr-root, capitalize);
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $clr-error;
+            border: 1px solid #993232;
+            
+        }
+    }
+}

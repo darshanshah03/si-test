@@ -1,0 +1,30 @@
+//mod-team-info
+.mod-team-info{
+    display: flex;
+    align-items: center;
+
+    .team-title, .team-count{
+        @include font-source(1.2rem, 1.306rem, $font-regular, $clr-root, uppercase)
+    }
+
+    .team-title{
+        margin-left: 1.1rem;
+    }
+
+    .team-count{
+        padding: 0.4rem 1.45rem;
+        border-radius: 0.2rem;
+        margin-left: auto;
+    }
+
+    .team-media-wap{
+        width: 3.7rem;
+        border-radius: 0.17rem;
+        border: 1px solid $clr-border;
+    }
+
+    .team-count{
+        @include background-opacity($clr-black, 0.3);
+    }
+
+}

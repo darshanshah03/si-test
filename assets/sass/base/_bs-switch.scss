@@ -1,0 +1,66 @@
+//bs-switch
+.bs-switch{
+    position: relative;
+    display: inline-block;
+
+    input[type="checkbox"]{
+        -webkit-appearance : none;
+        appearance         : none;
+        width              : 0;
+        height             : 0;
+        margin             : 0;
+        border             : none;
+        position: absolute;
+        left: -999999px;
+
+        +label{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        &:checked{
+            +label{
+                +.switch-wrap{
+                    .indicator{
+                        transform: translateX(100%);
+                    }
+                }
+            }
+        }
+    }
+
+    .switch-wrap{
+        display: flex;
+        width: 14rem;
+        justify-content: space-between;
+        @include background-opacity($clr-black, 0.3);
+        border-radius: 3rem;
+        position: relative;
+
+        .mod-icon-text{
+            position: relative;
+            z-index: 2;
+        }
+
+        .indicator{
+            position: absolute;
+            top: 0.1rem;
+            left: 0.1rem;
+            bottom: 0.1rem;
+            background-color: $clr-primary;
+            z-index: 1;
+            width: 6.9rem;
+            border-radius: 3rem;
+            transition: all 0.3s ease;
+        }
+    }
+
+
+
+
+}

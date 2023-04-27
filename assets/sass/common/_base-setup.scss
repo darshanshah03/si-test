@@ -1,0 +1,24 @@
+// base-setup
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+
+    @include mq-between($sm-mobile, $mobile){
+      font-size: 13px;
+    }
+
+    @include mq-above($sm){
+      font-size: 15px;
+    }
+    
+  }
+  
+  body {
+    line-height: initial;
+    font-family: $font;
+    font-weight: $font-regular;
+    font-display: 'swap';
+    background-color: $clr-body;
+    color: $clr-root;
+  }

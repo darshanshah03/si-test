@@ -1,0 +1,79 @@
+//mod-player
+.mod-player{
+    padding: 1.3rem 1rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .player-link{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+
+
+    .player-info{
+        width: 60%;
+        display: flex;
+        align-items: center;
+
+        .img-wrap{
+            max-width: 3.1rem;
+        }
+        .info-wrap{
+            margin-left: 1.5rem;
+        }
+
+
+    }
+
+    .player-title{
+        @include font-source(1.6rem, 2rem, $font-medium, $clr-body, capitalize);
+    }
+
+    .player-country{
+        @include font-source(1.2rem, 1.6rem, $font-regular, $clr-base-2, uppercase);
+    }
+
+    .player-points{
+        width: 18%;
+    }
+
+    .player-points,.player-credits{
+        @include font-source(1.4rem, 2rem, $font-medium, $clr-base-2, uppercase);
+    }
+
+    .player-credits{
+        color: $clr-body;
+    }
+
+    .player-action-wrap{
+        margin-left: auto;
+        .btn-remove{
+            display: none;
+        }
+    }
+
+    &.typ-added{
+        @include background-opacity($clr-secondary, 0.1);
+
+        .player-action-wrap{
+            .btn-add{
+                display: none;
+            }
+
+            .btn-remove{
+                display: block;
+            }
+        }
+
+
+    }
+
+}

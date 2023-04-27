@@ -1,0 +1,18 @@
+//bs-meta-info-wrap
+.bs-meta-info-wrap{
+    padding: 0.6rem;
+    background-color: $clr-secondary;
+    border-radius: 0.4rem;
+
+    .miw-info{
+        @include font-source(0.8rem, 0.85rem, $font-medium, $clr-root, capitalize);
+        margin-bottom: 0.6rem;
+        .text-lg{
+            font-size: 1.6rem;
+            line-height: 1.74rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+
+}

@@ -1,0 +1,31 @@
+//bs-header
+.bs-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    .title{
+        @include font-source(2rem, 2.176rem, $font-semibold, $clr-root, capitalize)
+    }
+
+    .lhs,.rhs{
+        display: flex;
+        align-items: center;
+    }
+
+    .lhs{
+        .title{
+            margin-left: 2rem;
+        }
+        .bs-btn.btn-icon{
+            margin-left: -1rem;
+        }
+    }
+
+    .rhs{
+        .mod-timer{
+            margin-right: 1.6rem;
+        }
+    }
+    
+}

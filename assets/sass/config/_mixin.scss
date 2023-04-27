@@ -1,0 +1,50 @@
+//background Opacity
+@mixin background-opacity($color,
+  $opacity) {
+  background: rgba($color, $opacity);
+}
+
+//media query
+@mixin mq-below($breakpoint) {
+  @media only screen and (max-width:$breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-between($lower, $upper) {
+  @media only screen and (min-width:$lower) and (max-width:#{$upper - 1}) {
+    @content;
+  }
+}
+
+@mixin mq-above($breakpoint) {
+  @media only screen and (min-width:$breakpoint) {
+    @content;
+  }
+}
+
+
+//font styles
+@mixin font-source($size: false, $lh: false, $weight: false, $colour: false, $tt: false) {
+
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $colour {
+    color: $colour;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $tt {
+    text-transform: $tt;
+  }
+}

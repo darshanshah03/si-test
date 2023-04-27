@@ -1,0 +1,20 @@
+.cm-not-in-page {
+    left: -99999px;
+    position: absolute;
+    top: -99999px;
+}
+
+.cm-line-break {
+    display: block;
+}
+
+.cm-container{
+    max-width: 37.5rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include mq-below($mobile){
+        max-width: initial;
+    }
+}

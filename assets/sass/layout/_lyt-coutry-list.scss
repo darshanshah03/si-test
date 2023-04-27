@@ -1,0 +1,18 @@
+//lyt-coutry-list
+.lyt-coutry-list{
+
+    padding: 0 1rem;
+
+    .cl-item{
+        margin-bottom: 1.323rem;
+
+        &:first-child{
+            .mod-team-info{
+                .team-count{
+                    @include background-opacity($clr-root, 0.1);
+                }
+            }
+        }
+    }
+
+}

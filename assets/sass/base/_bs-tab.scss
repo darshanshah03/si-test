@@ -1,0 +1,31 @@
+//bs-tab
+.bs-tab{
+    margin-top: -6rem;
+
+    .tab-nav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .tab-action{
+        margin: 2rem 0;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: flex-end;
+
+        .btn-default{
+            margin-left: 3rem;
+        }
+    }
+
+    .tab-content{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+
+
+}
